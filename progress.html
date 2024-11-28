@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <center><h1>Progress Report</h1></center>
+    <br><br><br>
+  <style>
+   table,th,td{
+      border-collapse: collapse;
+      margin: auto;  
+   }
+   td{
+      width: 100px;
+      height: 25px;
+      background-color: aquamarine;
+  }
+  th{
+    background-color: lightskyblue;
+  }
+  </style>
+  <script>
+    function calculateTotal() {
+        const marksInputs = document.querySelectorAll('.marks');
+        let total = 0;
+
+        marksInputs.forEach(input => {
+            const value = parseFloat(input.value) || 0; // Get value or 0 if empty
+            total += value;
+        });
+
+        document.getElementById('Totmarks').textContent = total;
+    }
+</script>
+</head>
+<body>
+Student Name:-<input type="text" placeholder="enter name" style:"margin-left">
+class:-<input type="number" placeholder="enter class" min="6" max="10" > 
+Medium:-Telugu<input type="radio" name="Medium">English<input type="radio" name="Medium" style:"margin-right">
+<br><br><br>
+<table border="1">
+   <thead>
+   <tr id="heading">
+   <th rowspan="2">S.No</th>
+   <th rowspan="2">Subject</th>
+   <th colspan="5">Formattive Assesment</th>
+   <th colspan="4">Summative Assesment</th>
+   <th rowspan="2">Total</th>
+   </tr>
+   <tr>
+   
+   <th>FA1</th>
+   <th>FA2</th>
+   <th>FA3</th>
+   <th>FA4</th>
+   <th>Total</th>
+   <th>SA1</th>
+   <th>SA2</th>
+   <th>SA3</th>
+   
+   <th>Total</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+   <td>1</td>
+   <td>TELUGU</td>
+   <td class= "subjects" ><input type="number"  placeholder="enter your marks" min="0" max="100"></td>
+   <td class= "subjects" ><input type="number"  placeholder="enter your marks" min="0" max="100"></td>
+   <td class= "subjects" ><input type="number"  placeholder="enter your marks" min="0" max="100"></td>
+   <td class= "subjects" ><input type="number"  placeholder="enter your marks" min="0" max="100"></td>
+   <td id="Totmarks" ></td>
+   <td class= "subjects" ><input type="number"  placeholder="enter your marks" min="0" max="100"></td>
+   <td class= "subjects" ><input type="number"  placeholder="enter your marks" min="0" max="100"></td>
+   <td class= "subjects" ><input type="number"  placeholder="enter your marks" min="0" max="100"></td>
+   <td class= "subjects" ><input type="number"  placeholder="enter your marks" min="0" max="100"></td>
+   <td id="Totmarks"></td>
+
+   <td></td>
+   </tr>
+   <tr>
+       <td>2</td>
+       <td>HINDI</td>
+       <td class="subjects"><input type="number"  min="0" max="100" ></td>
+       <td class="subjects"><input type="number"  min="0" max="100" ></td>
+       <td class="subjects"><input type="number"  min="0" max="100" ></td>
+       <td class="subjects"><input type="number"  min="0" max="100" ></td>
+       <td class="subjects"><input type="number"  min="0" max="100" ></td>
+       <td class="subjects"><input type="number"  min="0" max="100" ></td>
+       <td class="subjects"><input type="number"  min="0" max="100" ></td>
+       <td class="subjects"><input type="number"  min="0" max="100" ></td>
+       <td class="subjects"><input type="number"  min="0" max="100" ></td>
+       <td id="Totmarks"></td>
+      
+       <td></td>
+       </tr>
+       <tr>
+           <td>3</td>
+           <td>ENGLISH</td>
+           <td class="subjects"><input type="number" ></td>
+           <td class="subjects"><input type="number" ></td>
+           <td class="subjects"><input type="number" ></td>
+           <td class="subjects"><input type="number" ></td>
+           <td class="subjects"><input type="number" ></td>
+           <td class="subjects"><input type="number" ></td>
+           <td class="subjects"><input type="number" ></td>
+           <td class="subjects"><input type="number" ></td>
+           <td class="subjects"><input type="number" ></td>
+           <td  id="Totmarks"></td>
+           <td></td>
+           </tr>
+           <tr>
+               <td>4</td>
+               <td>MATHEMATICS</td>
+               <td class="subjects"><input type="number" ></td>
+               <td class="subjects"><input type="number" ></td>
+               <td class="subjects"><input type="number" ></td>
+               <td class="subjects"><input type="number" ></td>
+               <td class="subjects"><input type="number" ></td>
+               <td class="subjects"><input type="number" ></td>
+               <td class="subjects"><input type="number" ></td>
+               <td class="subjects"><input type="number" ></td>
+               <td class="subjects"><input type="number" ></td>
+               <td id="Totmarks"></td>
+               <td></td>
+               </tr>
+               <tr>
+                   <td>5</td>
+                   <td>SCIENCE</td>
+                   <td class="subjects"><input type="number" ></td>
+                   <td class="subjects"><input type="number" ></td>
+                   <td class="subjects"><input type="number" ></td>
+                   <td class="subjects"><input type="number" ></td>
+                   <td class="subjects"><input type="number" ></td>
+                   <td class="subjects"><input type="number" ></td>
+                   <td class="subjects"><input type="number" ></td>
+                   <td class="subjects"><input type="number" ></td>
+                   <td class="subjects"><input type="number" ></td>
+                   <td id="Totmarks"></td>
+                   <td></td>
+                   </tr>
+                   <tr>
+                       <td>6</td>
+                       <td>SOCIAL</td>
+                       <td class="subjects"><input type="number" ></td>
+                       <td class="subjects"><input type="number" ></td>
+                       <td class="subjects"><input type="number" ></td>
+                       <td class="subjects"><input type="number" ></td>
+                       <td class="subjects"><input type="number" ></td>
+                       <td class="subjects"><input type="number" ></td>
+                       <td class="subjects"><input type="number" ></td>
+                       <td class="subjects"><input type="number" ></td>
+                       <td class="subjects"><input type="number" ></td>
+                       <td id="Totmarks"></td>
+                       <td></td>
+                       </tr>
+                       <tr>
+                           <td>7</td>
+                           <td>ART EDUCATION</td>
+                           <td class="subjects"><input type="number" ></td>
+                           <td class="subjects"><input type="number" ></td>
+                           <td class="subjects"><input type="number" ></td>
+                           <td class="subjects"><input type="number" ></td>
+                           <td class="subjects"><input type="number" ></td>
+                           <td class="subjects"><input type="number" ></td>
+                           <td class="subjects"><input type="number" ></td>
+                           <td class="subjects"><input type="number" ></td>
+                           <td class="subjects"><input type="number" ></td>
+                           <td  id="Totmarks"></td>
+                           <td></td>
+                           </tr>
+                           <tr>
+                               <td>8</td>
+                               <td>HEALTH</td>
+                               <td class="subjects"><input type="number" ></td>
+                               <td class="subjects"><input type="number" ></td>
+                               <td class="subjects"><input type="number" ></td>
+                               <td class="subjects"><input type="number" ></td>
+                               <td class="subjects"><input type="number" ></td>
+                               <td class="subjects"><input type="number" ></td>
+                               <td class="subjects"><input type="number" ></td>
+                               <td class="subjects"><input type="number" ></td>
+                               <td class="subjects"><input type="number" ></td>
+                               <td id="Totmarks"></td>
+                               <td></td>
+                               </tr>
+                               <tr>
+                                   <td>9</td>
+                                   <td>PHYSICAL EDUCATION</td>
+                                   <td class="subjects"><input type="number" ></td>
+                                   <td class="subjects"><input type="number" ></td>
+                                   <td class="subjects"><input type="number" ></td>
+                                   <td class="subjects"><input type="number" ></td>
+                                   <td class="subjects"><input type="number" ></td>
+                                   <td class="subjects"><input type="number" ></td>
+                                   <td class="subjects"><input type="number" ></td>
+                                   <td class="subjects"><input type="number" ></td>
+                                   <td class="subjects"><input type="number" ></td>
+                                   <td id="Totmarks"></td>
+                                   <td></td>
+                                   </tr>
+                                   <tr>
+                                       <td>10</td>
+                                       <td>MUSIC</td>
+                                       <td class="subjects"><input type="number" ></td>
+                                       <td class="subjects"><input type="number" ></td>
+                                       <td class="subjects"><input type="number" ></td>
+                                       <td class="subjects"><input type="number" ></td>
+                                       <td class="subjects"><input type="number" ></td>
+                                       <td class="subjects"><input type="number" ></td>
+                                       <td class="subjects"><input type="number" ></td>
+                                       <td class="subjects"><input type="number" ></td>
+                                       <td class="subjects"><input type="number" ></td>
+                                       <td id="Totmarks"></td>
+                                       <td></td>
+                                       </tr>
+                                       <tr>
+                                           <td>11</td>
+                                           <td>WORK EDUCATION</td>
+                                           <td class="subjects"><input type="number" ></td>
+                                           <td class="subjects"><input type="number" ></td>
+                                           <td class="subjects"><input type="number" ></td>
+                                           <td class="subjects"><input type="number" ></td>
+                                           <td class="subjects"><input type="number" ></td>
+                                           <td class="subjects"><input type="number" ></td>
+                                           <td class="subjects"><input type="number" ></td>
+                                           <td class="subjects"><input type="number" ></td>
+                                           <td class="subjects"><input type="number" ></td>
+                                           <td id="Totmarks"></td>
+                                           <td></td>
+                                           </tr>
+                                           <tr>
+                                               <td>12</td>
+                                               <td>TECHNICAL EDUCATION</td>
+                                               <td class="subjects"><input type="number" ></td>
+                                               <td class="subjects"><input type="number" ></td>
+                                               <td class="subjects"><input type="number" ></td>
+                                               <td class="subjects"><input type="number" ></td>
+                                               <td class="subjects"><input type="number" ></td>
+                                               <td class="subjects"><input type="number" ></td>
+                                               <td class="subjects"><input type="number" ></td>
+                                               <td class="subjects"><input type="number" ></td>
+                                               <td class="subjects"><input type="number" ></td>
+                                               <td id="Totmarks"></td>
+                                               <td></td>
+                                               </tr>
+                                               <tr>
+                                                   <td>13</td>
+                                                   <td>MORAL VALUES</td>
+                                                   <td class="subjects"><input type="number" ></td>
+                                                   <td class="subjects"><input type="number" ></td>
+                                                   <td class="subjects"><input type="number" ></td>
+                                                   <td class="subjects"><input type="number" ></td>
+                                                   <td class="subjects"><input type="number" ></td>
+                                                   <td class="subjects"><input type="number" ></td>
+                                                   <td class="subjects"><input type="number" ></td>
+                                                   <td class="subjects"><input type="number" ></td>
+                                                   <td class="subjects"><input type="number" ></td>
+                                                   <td id="Totmarks"></td>
+                                                   <td></td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>14</td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td class="subjects"><input type="number" ></td>
+                                                       <td id="Totmarks"></td>
+                                                      
+                                                       </tr>
+   
+   </tbody>
+   </table>
+</body>
+</html>

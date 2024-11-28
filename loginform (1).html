@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>
+login form
+</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            background-color: whitesmoke; 
+            
+        }
+        
+        label {
+            color: grey; 
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%; 
+            padding: 10px;
+            margin: 5px 0 15px 0 black ; 
+            border: 1px solid black; 
+            border-radius: 4px; 
+        }
+        input[type="submit"] {
+            background-color: green; 
+            color: white; 
+            border: none;
+            padding: 10px;
+            border-radius: 4px; 
+            cursor: pointer; 
+        }
+        input[type="submit"]:hover {
+            background-color: green
+        }
+    </style>
+    <script type="text/javascript">
+
+function validate()
+{
+    var username=document.getElementById("uname")
+    var password=document.getElementById("pass")
+
+    if(username.value=="saikiran" && password.value =="krishna")
+    {
+        return true;
+    }
+    else if(username.value=="" || password.value=="")
+    {
+        alert("Please enter username and password")
+        return false;
+    }
+    else
+    {
+        alert("invalid username or password!!")
+        return false;
+    }
+
+}
+</script>
+</head>
+<body> 
+<form onsubmit=" return validate()" action="students.html" align=center>
+USERNAME:<input id="uname"  placeholder="username" type="text"><br><br>
+PASSWORD:<input id="pass"   placeholder="password" type="password"><br><br>
+<input type="submit">
+</form>
+</body>
+</html>
